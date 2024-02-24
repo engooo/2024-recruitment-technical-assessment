@@ -92,7 +92,6 @@ title.addEventListener('click', () => {
 const searchbar = document.getElementById("search-bar");
 const overlay = document.getElementById("task-overlay");
 searchbar.addEventListener('click', () => {
-  console.log('poop')
   overlay.style.display = "block"
 })
 
