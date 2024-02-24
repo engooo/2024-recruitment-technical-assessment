@@ -78,7 +78,6 @@ jsonData.forEach(course => {
       termOffered.textContent = term.toString()
       
       termContainer.append(termOffered)
-      console.log('poo', course, term)
     })
 })
 
