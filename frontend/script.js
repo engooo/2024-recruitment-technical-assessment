@@ -61,8 +61,10 @@ jsonData.forEach(course => {
 
     // Populate cards with json information
     courseCard.querySelector("#course").textContent = courseCode
-    const stars = "★".repeat(Math.floor(course.average_stars));
-    courseCard.querySelector("#avg-stars").textContent = stars
+    
+    const starsWidth = (course.average_stars / 5) * 100;
+    
+    courseCard.querySelector("#avg-stars").style.width = starsWidth + '%';
     courseCard.querySelector("#total-reviews").textContent = course.total_reviews + " reviews"
     courseCard.querySelector("#course-title").textContent = course.course_title
 

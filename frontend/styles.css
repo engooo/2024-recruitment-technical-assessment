@@ -161,15 +161,32 @@ svg {
 }
 
 .card-style .card-row-1-col-1 span {
-    font-size: 2.6rem;
-    color: #b789e5;
+    font-size: 2.4rem;
+    position: absolute;
+    
 }
 
+.avg-stars-below {
+    color: #dedede;
+}
+
+.avg-stars {
+    color: #b789e5;
+    z-index: 1000;
+    overflow: hidden;
+}
 .card-style .card-row-1-col-1 p {
     font-size: 1.2rem;
     color: #989898;
 }
 
+.card-style .stars-container {
+    position: relative;
+}
+
+.card-row-1-col-1 .total-reviews {
+    margin-top: 70px;
+}
 .card-style h2 {
     font-size: 2.5rem;
 }
